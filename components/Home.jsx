@@ -7,7 +7,7 @@ function Home() {
       <section className={styles.intro}>
         <p className={styles.accroche}>Créons votre site web ensemble</p>
         <h1>
-          Bienvenue ! Je m'appelle <span className={styles.name}>David</span> et je suis développeur Fullstack Junior
+          Bienvenue ! Je m&apos;appelle <span className={styles.name}>David</span> et je suis développeur Fullstack Junior
         </h1>
         <p>
           Je suis un développeur fullstack, avec une préférence pour le développement front-end.

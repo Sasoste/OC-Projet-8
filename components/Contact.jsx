@@ -12,7 +12,7 @@ function ContactForm() {
         <h2>Contactez-moi</h2>
         {state.succeeded && (
           <p className={styles.thanks}>
-            Merci de m'avoir contacté ! Je vous répondrai dès que possible.
+            Merci de m&apos;avoir contacté ! Je vous répondrai dès que possible.
           </p>
         )}
         <form onSubmit={handleSubmit} className={styles.form}>
