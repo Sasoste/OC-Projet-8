@@ -1,0 +1,30 @@
+@import "_variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%; 
+
+  .intro {
+    text-align: center;
+
+    .accroche {
+        font-size: 24px;
+    }
+    
+    h1 {
+      font-size: 44px;
+      font-weight: bold; 
+      .name {
+        color: $burnt;
+      }
+    }
+
+    p {
+        font-size: 18px; 
+        font-weight: bold;
+    }
+  }
+}

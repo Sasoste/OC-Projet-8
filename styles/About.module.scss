@@ -1,0 +1,28 @@
+@import "_variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%; 
+
+  .about {
+    text-align: center;
+
+    .accroche {
+        color: $burnt;
+        font-size: 24px;
+    }
+    
+    h2 {
+      font-size: 40px;
+      font-weight: bold; 
+    }
+
+    p {
+        font-size: 18px; 
+        font-weight: bold;
+    }
+  }
+}

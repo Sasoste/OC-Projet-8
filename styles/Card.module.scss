@@ -1,0 +1,40 @@
+@import '_variables';
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    p {
+      padding-left: 30px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $burnt;
+    }
+
+    &.rotate {
+      animation: spinAndGrow 1s forwards;
+    }
+}
+
+
+@keyframes spinAndGrow {
+    0% {
+      transform: scale(1.15);
+      color: $burnt;
+    }
+      99% {
+      transform: scale(1) rotate(360deg);
+    }
+    100% {
+      color: initial;
+    }
+  }
+  

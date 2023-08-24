@@ -1,0 +1,32 @@
+@import "_variables";
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: $black;
+    margin-bottom: 2rem;
+  }
+
+  .icones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      p {
+        display:none; 
+      }
+    }
+  }
+}
