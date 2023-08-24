@@ -4,7 +4,7 @@ import styles from "../styles/Contact.module.scss";
 import Footer from "./Footer";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm(process.env.FORMSPREE_FORM_ID);
+  const [state, handleSubmit] = useForm(NEXT_PUBLIC_FORMSPREE_ID);
 
   return (
     <div id="contact" className={`${styles.contact} section`}>
