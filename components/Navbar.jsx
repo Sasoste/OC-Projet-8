@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/Navbar.module.scss";
 import { HiMenu } from "react-icons/hi";
 import { MdClose } from "react-icons/md";

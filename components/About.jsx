@@ -1,5 +1,5 @@
-import styles from '../styles/About.module.scss';
-import Head from 'next/head'
+import styles from "../styles/About.module.scss";
+import Head from "next/head";
 
 
 function About() {
@@ -12,7 +12,7 @@ function About() {
         </h2>
         <p>
           Je suis un développeur fullstack en formation. <br />
-          Je viens de commencer l'apprentissage du développement web, en ayant une expérience passée avec Java. <br />
+          Je viens de commencer le développement web, en ayant une expérience passée avec Java. <br />
           Je suis passionné de sport, développement personnel et finance, j'aime beaucoup apprendre de nouvelles choses. <br />
           <br />
           Suite à l'essor des nouvelles technologies, j'ai voulu apprendre le développement web.<br />

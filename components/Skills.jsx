@@ -8,7 +8,6 @@ import {
   FaCss3Alt,
   FaNodeJs,
 } from "react-icons/fa";
-import Head from "next/head";
 
 function Skills() {
   const handleCardClick = (cardName) => {};

@@ -1,5 +1,5 @@
 import styles from "../styles/Card.module.scss";
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from "react";
 
 function Card({ icon: Icon, title, name, onCardClick }) {
     const [isRotating, setIsRotating] = useState(false);
