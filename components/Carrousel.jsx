@@ -6,9 +6,8 @@ function Carrousel({ projects }) {
     <div className={styles.wrapper}>
       <div className={styles.carrousel}>
         {projects.map((project, index) => (
-          <div className={styles.testCard}>
+          <div key={index} className={styles.testCard}>
             <ProjectCard
-              key={index}
               url={project.url}
               imageSrc={project.imageSrc}
               title={project.title}
