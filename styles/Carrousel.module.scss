@@ -1,0 +1,47 @@
+@import "_variables";
+
+.wrapper {
+  width: 30vw;
+  height: 50vh;
+  perspective: 3000px;
+
+  .carrousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: rotate 30s infinite linear;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    .testCard {
+      position: absolute;
+
+      &:nth-child(1) {
+        transform: rotateY(0deg) translateZ(150px);
+      }
+
+      &:nth-child(2) {
+        transform: rotateY(120deg) translateZ(150px);
+      }
+
+      &:nth-child(3) {
+        transform: rotateY(240deg) translateZ(150px);
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

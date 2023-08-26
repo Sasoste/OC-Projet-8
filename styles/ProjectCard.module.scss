@@ -1,36 +1,39 @@
 @import "_variables";
 
 .projectCard {
+  position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid $lightgrey;
+  justify-content: flex-end;
+  border: 1px transparent $black;
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  margin: auto; 
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  border-radius: 10px;
 
-  .projectImg {
-    margin-bottom: 5px;
-    position: relative;
+  .cardOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 250px;
-
-    img {
-      border-radius: 10px;
-    }
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    z-index: 3;
+    border-radius: 10px;
   }
 
   h3 {
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    color: $platinum;
     min-height: 1.5em;
   }
 
   p {
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 5px;
+    color: $platinum;
     min-height: 3em;
   }
 
@@ -38,32 +41,16 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+
+    svg {
+      color: $platinum;
+    }
   }
 
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    margin: auto;
-    justify-content: space-between;
-
-    .projectImg {
-      width: 30%;
-      height: auto;
-      margin-right: 5px;
-    }
-
-    .description {
-      padding-right: 10%;
-    }
-    .icons {
-      gap: 5px;
-    }
-    p {
-      font-size: 14px;
-    }
-    h3 {
-      font-size: 24px;
-    }
+  h3,
+  p,
+  .icons {
+    position: relative; // Ajoutez cette ligne
+    z-index: 4;
   }
 }

@@ -11,7 +11,7 @@
   width: 100%;
   height: 10vh;
   border-bottom: 1px solid $lightgrey;
-  z-index: 4; 
+  z-index: 4;
 
   @media (max-width: 768px) {
     justify-content: flex-end;
@@ -59,12 +59,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    background-color: $platinum;
 
-    
     li a {
-        font-size: 48px; 
-        border-bottom: 1px solid $black;
-
+      font-size: 48px;
+      border-bottom: 1px solid $black;
     }
   }
 
@@ -75,6 +74,6 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: darken($platinum, 10%);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }

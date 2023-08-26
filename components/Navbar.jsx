@@ -4,7 +4,6 @@ import { HiMenu } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 
-
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -16,7 +15,6 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-
       {isNavOpen ? (
         <button className={styles.closing} onClick={toggleNav}>
           <MdClose />
@@ -26,21 +24,31 @@ function Navbar() {
           <HiMenu />
         </button>
       )}
-      <ul className={`${styles.navList} ${isNavOpen ? styles.open : ''}`}>
+      <ul className={`${styles.navList} ${isNavOpen ? styles.open : ""}`}>
         <li>
-          <Link href="/#home" onClick={toggleNav}>Accueil</Link>
+          <Link href="/#home" onClick={toggleNav}>
+            Accueil
+          </Link>
         </li>
         <li>
-          <Link href="/#about" onClick={toggleNav}>À propos</Link>
+          <Link href="/#about" onClick={toggleNav}>
+            À propos
+          </Link>
         </li>
         <li>
-          <Link href="/#skills" onClick={toggleNav}>Compétences</Link>
+          <Link href="/#skills" onClick={toggleNav}>
+            Compétences
+          </Link>
         </li>
         <li>
-          <Link href="/#project" onClick={toggleNav}>Projets</Link>
+          <Link href="/#project" onClick={toggleNav}>
+            Projets
+          </Link>
         </li>
         <li>
-          <Link href="/#contact" onClick={toggleNav}>Contact</Link>
+          <Link href="/#contact" onClick={toggleNav}>
+            Contact
+          </Link>
         </li>
       </ul>
       {isNavOpen && <div className={styles.overlay} onClick={toggleNav}></div>}

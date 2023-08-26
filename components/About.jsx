@@ -4,20 +4,13 @@ function About() {
   return (
     <div id="about" className={`${styles.container} section`}>
       <section className={styles.about}>
-        <p className={styles.accroche}>À Propos</p>
-        <h2>Qui je suis</h2>
+        <h2>À Propos : Qui suis-je</h2>
         <p>
           Je suis un développeur fullstack en formation. <br />
-          Je viens de commencer le développement web, en ayant une expérience
-          passée avec Java. <br />
           Je suis passionné de sport, développement personnel et finance,
-          j&apos;aime beaucoup apprendre de nouvelles choses. <br />
-          <br />
-          Suite à l&apos;essor des nouvelles technologies, j&apos;ai voulu
-          apprendre le développement web.
-          <br />
-          J&apos;ai donc suivi le parcours de développeur web
-          d&apos;OpenClassroom et voila le résultat de cette formation !<br />
+          j&apos;apprécie apprendre de nouvelles choses. <br />
+          Vous pouvez retrouver dans ce petit portfolio les résultats de ma
+          formation.
         </p>
       </section>
     </div>

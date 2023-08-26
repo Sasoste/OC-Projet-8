@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import styles from "../styles/Contact.module.scss";
 import Footer from "./Footer";
@@ -11,9 +10,9 @@ function ContactForm() {
       <div className={styles.formContainer}>
         <h2>Contactez-moi</h2>
         {state.succeeded && (
-          <p className={styles.thanks}>
+          <h3>
             Merci de m&apos;avoir contacté ! Je vous répondrai dès que possible.
-          </p>
+          </h3>
         )}
         <form onSubmit={handleSubmit} className={styles.form}>
           <label htmlFor="name">Votre nom</label>

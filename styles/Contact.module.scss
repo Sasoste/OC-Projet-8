@@ -1,11 +1,11 @@
-@import '_variables';
+@import "_variables";
 
 .contact {
   height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 
   .formContainer {
     flex: 1;
@@ -14,32 +14,30 @@
     justify-content: center;
   }
 
-    h2 {
-        text-align: center;
-        font-size: 40px;
-        font-weight: bold;
-    }
+  h2 {
+    text-align: center;
+    color: $burnt;
+  }
 
-    .thanks {
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center; 
-      color: $burnt;
-      margin-bottom: 10px; 
-    }
+  h3 {
+    text-align: center;
+    color: $burnt;
+    margin-bottom: 10px;
+  }
+
   .form {
     display: flex;
     flex-direction: column;
-    width: 50vw; 
+    width: 50vw;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $platinum;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     max-width: 500px;
 
     @media (max-width: 768px) {
-      width: 80vw; 
+      width: 80vw;
     }
 
     label {
@@ -73,7 +71,7 @@
       padding: 10px 20px;
       background-color: $lightgrey;
       font-size: 18px;
-      font-weight: bold;  
+      font-weight: bold;
       color: $black;
       border: none;
       border-radius: 4px;
@@ -82,12 +80,113 @@
 
       &:hover {
         background-color: $burnt;
-        color: white; 
+        color: $platinum;
       }
 
       &:disabled {
         background-color: $lightgrey;
         cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@-moz-document url-prefix() {
+  .contact {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .formContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .thanks {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: $burnt;
+      margin-bottom: 10px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      width: 30vw;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid $platinum;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+
+      @media (max-width: 768px) {
+        width: 80vw;
+      }
+
+      label {
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        margin-bottom: 8px;
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+        background-color: #f4f4f5;
+
+        &:focus {
+          border-color: $burnt;
+          outline: none;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 50px;
+      }
+
+      button {
+        align-self: center;
+        padding: 10px 20px;
+        background-color: $lightgrey;
+        font-size: 18px;
+        font-weight: bold;
+        color: $black;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $burnt;
+          color: $platinum;
+        }
+
+        &:disabled {
+          background-color: $lightgrey;
+          cursor: not-allowed;
+        }
       }
     }
   }

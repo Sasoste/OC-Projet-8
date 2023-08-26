@@ -8,9 +8,7 @@
   height: 90vh;
 
   h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: $black;
+    color: $burnt;
     margin-bottom: 2rem;
   }
 
@@ -25,7 +23,7 @@
 
     @media (max-width: 480px) {
       p {
-        display:none; 
+        display: none;
       }
     }
   }
