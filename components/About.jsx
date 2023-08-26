@@ -7,7 +7,7 @@ function About() {
         <h2>À Propos : Qui suis-je</h2>
         <p>
           Je suis un développeur fullstack en formation. <br />
-          Je suis passionné de sport, développement personnel et finance,
+          Je suis aussi passionné de sport, développement personnel et finance,
           j&apos;apprécie apprendre de nouvelles choses. <br />
           Vous pouvez retrouver dans ce petit portfolio les résultats de ma
           formation.
