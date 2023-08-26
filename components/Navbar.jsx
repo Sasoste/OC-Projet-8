@@ -13,6 +13,15 @@ function Navbar() {
     }
   };
 
+  const handleNavigation = (e, target) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(target);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+    toggleNav();
+  };
+
   return (
     <nav className={styles.navbar}>
       {isNavOpen ? (
@@ -26,27 +35,57 @@ function Navbar() {
       )}
       <ul className={`${styles.navList} ${isNavOpen ? styles.open : ""}`}>
         <li>
-          <Link href="/#home" onClick={toggleNav}>
+          <Link
+            href="/#home"
+            onClick={(e) => {
+              toggleNav();
+              handleNavigation(e, "home");
+            }}
+          >
             Accueil
           </Link>
         </li>
         <li>
-          <Link href="/#about" onClick={toggleNav}>
+          <Link
+            href="/#about"
+            onClick={(e) => {
+              toggleNav();
+              handleNavigation(e, "about");
+            }}
+          >
             À propos
           </Link>
         </li>
         <li>
-          <Link href="/#skills" onClick={toggleNav}>
+          <Link
+            href="/#skills"
+            onClick={(e) => {
+              toggleNav();
+              handleNavigation(e, "skills");
+            }}
+          >
             Compétences
           </Link>
         </li>
         <li>
-          <Link href="/#project" onClick={toggleNav}>
+          <Link
+            href="/#project"
+            onClick={(e) => {
+              toggleNav();
+              handleNavigation(e, "project");
+            }}
+          >
             Projets
           </Link>
         </li>
         <li>
-          <Link href="/#contact" onClick={toggleNav}>
+          <Link
+            href="/#contact"
+            onClick={(e) => {
+              toggleNav();
+              handleNavigation(e, "contact");
+            }}
+          >
             Contact
           </Link>
         </li>

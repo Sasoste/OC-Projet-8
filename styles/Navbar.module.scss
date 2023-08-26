@@ -20,7 +20,6 @@
   .menuBurger,
   .closing {
     border: none;
-    background-color: darken($platinum, 10%);
     font-size: 40px;
     display: none;
     z-index: 3;
@@ -28,6 +27,14 @@
     @media (max-width: 768px) {
       display: flex;
     }
+  }
+
+  .closing {
+    background-color: $platinum;
+  }
+
+  .menuBurger {
+    background-color: darken($platinum, 10%);
   }
 
   .navList {
@@ -74,6 +81,6 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: $platinum;
   }
 }
