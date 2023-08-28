@@ -11,14 +11,13 @@ function Home() {
   return (
     <div id="home" className={`${styles.container} section`}>
       <section className={styles.intro}>
-        <h2>Créons ensemble votre site web</h2>
         <h1>
-          Bienvenue ! Je m&apos;appelle{" "}
-          <span className={styles.name}>David</span>
+          Créons ensemble <span className={styles.name}>votre site web</span>
         </h1>
         <h2>
-          Je suis développeur Fullstack Junior <br /> en formation avec
-          OpenClassrooms
+          Bienvenue ! Je suis David
+          <br />
+          développeur Fullstack Junior <br /> en formation avec OpenClassrooms
         </h2>
         <button
           className={styles.contactButton}
