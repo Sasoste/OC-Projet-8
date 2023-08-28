@@ -36,8 +36,10 @@ function Project() {
   ];
   return (
     <div id="project" className={`${styles.projectsPage} section`}>
-      <h2>Mes Projets</h2>
-      <Carrousel projects={projects} />
+      <div className={styles.projectContainer}>
+        <h2>Mes Réalisations</h2>
+        <Carrousel projects={projects} />
+      </div>
     </div>
   );
 }

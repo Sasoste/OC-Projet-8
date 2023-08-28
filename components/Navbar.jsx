@@ -45,7 +45,7 @@ function Navbar() {
             Accueil
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             href="/#about"
             onClick={(e) => {
@@ -55,7 +55,7 @@ function Navbar() {
           >
             À propos
           </Link>
-        </li>
+          </li> */}
         <li>
           <Link
             href="/#skills"

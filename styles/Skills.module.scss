@@ -4,8 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 90vh;
+  background-image: url("/Background1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 10%;
 
   h2 {
     color: $burnt;
@@ -19,12 +24,13 @@
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 480px) {
       p {
         display: none;
       }
     }
+  }
+  @media (max-width: 768px) {
+    padding-left: 0;
+    align-items: center;
   }
 }

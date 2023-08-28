@@ -2,19 +2,24 @@
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 0 1rem;
-  background-color: darken($platinum, 10%);
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
   height: 10vh;
-  border-bottom: 1px solid $lightgrey;
   z-index: 4;
 
   @media (max-width: 768px) {
     justify-content: flex-end;
+  }
+
+  @media (min-width: 769px) {
+    .activeLink {
+      color: $burnt;
+    }
   }
 
   .menuBurger,
@@ -24,24 +29,17 @@
     display: none;
     z-index: 3;
     padding-right: 3rem;
+    background-color: transparent;
     @media (max-width: 768px) {
       display: flex;
     }
-  }
-
-  .closing {
-    background-color: $platinum;
-  }
-
-  .menuBurger {
-    background-color: darken($platinum, 10%);
   }
 
   .navList {
     list-style: none;
     display: flex;
     gap: 1rem;
-    padding-right: 1rem;
+    padding-right: 3rem;
 
     li a {
       color: $black;

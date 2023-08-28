@@ -3,11 +3,20 @@
 .projectsPage {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   height: 90vh;
-  max-width: 1400px;
   margin: auto;
+  background-image: url("/Background2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  .projectContainer {
+    text-align: center;
+    padding-right: 15%;
+  }
 
   a {
     width: 30%;
@@ -19,12 +28,14 @@
   }
 
   @media (max-width: 768px) {
-    a {
-      width: 100%;
+    align-items: center;
+
+    .projectContainer {
+      padding-right: 0;
     }
 
     h2 {
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
   }
 }
