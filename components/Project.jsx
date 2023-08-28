@@ -17,6 +17,8 @@ function Project() {
       imageSrc: "/Booki.webp",
       title: "Booki",
       description: "Création d'une page web en HTML et CSS",
+      difficulty: "Difficulté: Découverte de CSS",
+      solution: "Solution: Recherche d'explication sur Youtube",
       icons: [FaHtml5, FaCss3Alt, FaGitAlt],
     },
     {
@@ -24,6 +26,8 @@ function Project() {
       imageSrc: "/Nina.webp",
       title: "Nina",
       description: "Amélioration des performances d'un site web",
+      difficulty: "Difficulté: Amélioration du SEO",
+      solution: "Solution: Ajout des éléments un par un",
       icons: [FaHtml5, FaJsSquare, FaGitAlt],
     },
     {
@@ -31,6 +35,8 @@ function Project() {
       imageSrc: "/Kasa.webp",
       title: "Kasa",
       description: "Création d'une application en ReactJS et Sass",
+      difficulty: "Difficulté: Gestion des dossiers et fichiers",
+      solution: "Solution: Organisation par pairs",
       icons: [FaReact, FaSass, FaGitAlt],
     },
   ];

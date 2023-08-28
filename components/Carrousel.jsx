@@ -12,6 +12,8 @@ function Carrousel({ projects }) {
               imageSrc={project.imageSrc}
               title={project.title}
               description={project.description}
+              difficulty={project.difficulty}
+              solution={project.solution}
               icons={project.icons}
             />
           </div>
