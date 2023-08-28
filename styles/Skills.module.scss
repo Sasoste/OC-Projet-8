@@ -12,24 +12,31 @@
   background-repeat: no-repeat;
   padding-left: 10%;
 
-  h2 {
-    color: $burnt;
-    margin-bottom: 2rem;
-  }
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
 
-  .icones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    h2 {
+      color: $burnt;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
 
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-      p {
-        display: none;
+    .icones {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        p {
+          display: none;
+        }
       }
     }
   }
-  @media (max-width: 768px) {
+
+  @media (max-width: 940px) {
     padding-left: 0;
     align-items: center;
   }
