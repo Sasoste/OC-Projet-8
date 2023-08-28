@@ -15,10 +15,6 @@
     justify-content: center;
     align-items: center;
 
-    &:hover {
-      animation-play-state: paused;
-    }
-
     .testCard {
       position: absolute;
 
@@ -34,14 +30,34 @@
         transform: rotateY(240deg) translateZ(150px);
       }
     }
-  }
-}
 
-@keyframes rotate {
-  from {
-    transform: rotateY(0deg);
+    &:hover {
+      animation: none;
+
+      .testCard {
+        transition: transform 0.5s ease;
+
+        &:nth-child(1) {
+          transform: rotateY(0deg) translateX(-250px);
+        }
+
+        &:nth-child(2) {
+          transform: rotateY(0deg) translateX(0px);
+        }
+
+        &:nth-child(3) {
+          transform: rotateY(0deg) translateX(250px);
+        }
+      }
+    }
   }
-  to {
-    transform: rotateY(360deg);
+
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
   }
 }
