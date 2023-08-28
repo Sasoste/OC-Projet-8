@@ -44,36 +44,24 @@
         }
       }
     }
+    @media (min-width: 769px) {
+      &:hover {
+        animation: none;
 
-    &:hover {
-      animation: none;
+        .testCard {
+          transition: transform 0.5s ease;
 
-      .testCard {
-        transition: transform 0.5s ease;
+          &:nth-child(1) {
+            transform: rotateY(0deg) translateX(-250px);
+          }
 
-        &:nth-child(1) {
-          transform: rotateY(0deg) translateX(-250px);
-        }
+          &:nth-child(2) {
+            transform: rotateY(0deg) translateX(0px);
+          }
 
-        &:nth-child(2) {
-          transform: rotateY(0deg) translateX(0px);
-        }
-
-        &:nth-child(3) {
-          transform: rotateY(0deg) translateX(250px);
-        }
-      }
-      @media (max-width: 768px) {
-        &:nth-child(1) {
-          transform: rotateY(0deg) translateZ(100px);
-        }
-
-        &:nth-child(2) {
-          transform: rotateY(120deg) translateZ(100px);
-        }
-
-        &:nth-child(3) {
-          transform: rotateY(240deg) translateZ(100px);
+          &:nth-child(3) {
+            transform: rotateY(0deg) translateX(250px);
+          }
         }
       }
     }
